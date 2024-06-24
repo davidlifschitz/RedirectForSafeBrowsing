@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Safer Web Redirector",
+  "version": "1.0",
+  "description": "Redirects to a safer website when a harmful URL is entered.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

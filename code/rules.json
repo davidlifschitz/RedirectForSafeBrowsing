@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.youtube.com"
+        }
+      },
+      "condition": {
+        "urlFilter": "||bad-website-example1.com",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.google.com"
+        }
+      },
+      "condition": {
+        "urlFilter": "||bad-website-example2.com",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://finance.yahoo.com/"
+            }
+        },
+        "condition": {
+            "urlFilter": "||bad-website-example3.com",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+  ]
+  
